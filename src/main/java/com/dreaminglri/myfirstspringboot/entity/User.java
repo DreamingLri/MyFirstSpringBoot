@@ -1,31 +1,51 @@
 package com.dreaminglri.myfirstspringboot.entity;
 
 public class User {
-    private String name;
+    private int id;
+    private String username;
     private String password;
+    private String birthday;
 
     public User() {
     }
 
-    public User(String name, String password) {
-        this.name = name;
+    public User(int id, String username, String password, String birthday) {
+        this.id = id;
+        this.username = username;
         this.password = password;
+        this.birthday = birthday;
     }
 
     /**
      * 获取
-     * @return name
+     * @return id
      */
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
     /**
      * 设置
-     * @param name
+     * @param id
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * 获取
+     * @return username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * 设置
+     * @param username
+     */
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /**
@@ -44,7 +64,23 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * 获取
+     * @return birthday
+     */
+    public String getBirthday() {
+        return birthday;
+    }
+
+    /**
+     * 设置
+     * @param birthday
+     */
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
     public String toString() {
-        return "User{name = " + name + ", password = " + password + "}";
+        return "User{id = " + id + ", username = " + username + ", password = " + password + ", birthday = " + birthday + "}";
     }
 }
