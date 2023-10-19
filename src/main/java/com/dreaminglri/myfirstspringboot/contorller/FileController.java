@@ -32,6 +32,7 @@ public class FileController {
         }
 
         File file = new File(path+photo.getOriginalFilename());
+        //path每次运行都会变化，所以可以直接写死
         photo.transferTo(file);
     }
 }
