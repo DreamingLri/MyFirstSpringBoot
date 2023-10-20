@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
+
     @GetMapping("/user/{id}")
     public String getUserId(@PathVariable int id){
         System.out.println(id);
