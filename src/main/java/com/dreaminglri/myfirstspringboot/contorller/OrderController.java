@@ -19,6 +19,7 @@ public class OrderController {
     public List findAll(){
         List orders = orderMapper.selectAllOrdersAndUser();
         return orders;
+        //orders
     }
 
     @GetMapping("/order/{id}")
